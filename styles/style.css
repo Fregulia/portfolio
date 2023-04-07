@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --cor-principal: #0A1931;
+    --cor-secundaria: #EFEFEF;
+    --cor-terciaria: #FFC947;
+    --cor-hover: #185ADB;
+
+    --fonte-principal: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-principal);
+    color: white;
+}
+section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: space-between;
+}
+.titulo{
+    font-size: 2.25rem;
+    font-family: var(--fonte-principal);
+}
+.foto{
+    border-radius: 20px;
+    width: 50%;
+    margin-left: 20px;
+}
+.principal{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 84px;
+}
+
+.cabecalho{
+    padding: 3% 0 0 15%;
+}
+.cabecalho__menu{
+    display: flex;
+    gap: 80px    
+}
+.cabecalho__menu__link{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    transition: 0.7s;
+}
+.cabecalho__menu__link:hover{
+    font-size: 2rem;
+}
+.descricao{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+}
+.links{
+    flex-direction: column;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+
+}
+.botoes1{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-terciaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    transition: background-color 0.6s;
+}
+.botoes1:hover{
+    background-color: var(--cor-hover);
+}
+
+.subtitulo{
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.destaque{
+    color: var(--cor-terciaria);
+}
+.rodape{
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    color: var(--cor-principal);
+    width: 100%;
+    height: auto;
+    padding: 24px;
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .foto{
+        width: 70%;
+    }
+    .cabecalho{
+        padding: 10%;
+        
+    }
+    .cabecalho__menu{
+        justify-content: center;
+    }
+
+    .principal{
+        padding: 5%;
+        flex-direction: column-reverse;
+    }
+
+    section{
+        width: auto;
+    }
+}
